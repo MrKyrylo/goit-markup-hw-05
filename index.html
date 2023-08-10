@@ -413,6 +413,19 @@
                   </li>
               </ul>
           </div>
+          <div class="div-footer-for-input">
+            <p class="subscribe-p">Subscribe</p>
+            <form class="form-footer">
+              <label class="label-for-form">
+                <input type="email" name="email" placeholder="E-mail" class="input-footer"/>
+              </label>
+              <button type="submit" class="button-subscribe">Subscribe
+                <svg width="24" height="24" class="svg-button">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
       </div>
   </footer>
     <div data-modal class="js-structure is-hidden">
@@ -422,6 +435,43 @@
             <use href="./images/icons.svg#icon-dagger"></use>
           </svg>
         </button>
+        <p class="p-for-modal-window">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="div-in-form">
+            <label for="user-name" class="label-modal-widnow">Name</label>
+            <div class="icon-for-input">
+              <input type="text" id="user-name" name="user-name" class="input-for-modal-widnow"/>
+              <svg width="18" height="24" class="svg-modal-window">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label for="user-name" class="label-modal-widnow">Phone</label>
+            <div class="icon-for-input">
+              <input type="text" id="user-name" name="user-name" class="input-for-modal-widnow"/>
+              <svg width="18" height="24" class="svg-modal-window">
+                <use href="./images/icons.svg#icon-Calling"></use>
+              </svg>
+            </div>
+            <label for="user-name" class="label-modal-widnow">Email</label>
+            <div class="icon-for-input">
+              <input type="text" id="user-name" name="user-name" class="input-for-modal-widnow"/>
+              <svg width="18" height="24" class="svg-modal-window">
+                <use href="./images/icons.svg#icon-Message"></use>
+              </svg>
+            </div>
+            <div>
+              <label for="user-comment" class="label-modal-widnow">Comment</label>
+              <textarea name="user-comment" id="user-comment" placeholder="Text input" class="textarea-in-modal-window"></textarea>
+            </div>
+            <div class="div-for-checkbox">
+              <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="input-user-privacy visually-hidden"/>
+              <label for="user-privacy" class="label-user-privacy"> I accept the terms and conditions of the<span class="span-for-words-in-label"><svg width="10" height="8" class="svg-for-tick"><use href="./images/icons.svg#icon-tick"></use><svg></span>
+                <a href="/" class="privacy-policy-link">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="button-send"></button>
+          </div>
+        </form>  
       </div>
     </div>
     
