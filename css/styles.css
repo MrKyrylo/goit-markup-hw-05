@@ -29,6 +29,7 @@ h1, h2, h3 {
     --gray: #2e2f42; 
     --pretty: #f4f4fd;
     --specific: #8e8f99;
+    --good: #404bbf;
 }
 
 body {
@@ -933,7 +934,6 @@ body {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-color: #4D5AE5;
 }
 
 .svg-modal-window {
@@ -944,8 +944,9 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-for-modal-window:focus .svg-modal-window {
+.input-for-modal-window:focus .svg-modal-window:focus {
     fill: #4D5AE5;
+    border-color: #4D5AE5;
 }
 
 .textarea-in-modal-window {
@@ -1012,3 +1013,12 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+.div-for-label-and-textarea {
+    margin-bottom: 16px;
+}
+
+.input-user-privacy + .label-user-privacy .span-words-in-label {
+    background-color: var(--good);
+    border: none;
+    fill: var(--pretty);
+}
