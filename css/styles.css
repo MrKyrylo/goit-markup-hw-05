@@ -980,7 +980,7 @@ body {
     margin-bottom: 24px;
 }
 
-.label-user-privacy {
+.label-user-privacy span {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
