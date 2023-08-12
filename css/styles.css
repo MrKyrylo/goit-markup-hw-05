@@ -15,6 +15,13 @@ img {
     display: block;
 }
 
+p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
 
 :root {
     --white: #FFFFFF;
@@ -939,7 +946,6 @@ body {
 
 .input-for-modal-window:focus .svg-modal-window {
     fill: #4D5AE5;
-    border-color: #4D5AE5;
 }
 
 .input-for-modal-window:focus {
@@ -964,6 +970,10 @@ body {
 
 .textarea-in-modal-window:focus {
     border-color: #4D5AE5;
+}
+
+.container-for-inputs {
+    margin-bottom: 8px;
 }
 
 .div-for-checkbox {
@@ -1014,12 +1024,8 @@ body {
     margin-bottom: 16px;
 }
 
-.input-user-privacy + .label-user-privacy .span-words-in-label {
+.input-user-privacy:checked + .label-user-privacy .span-words-in-label span {
     background-color: var(--good);
     border: none;
     fill: var(--pretty);
-}
-
-.container-for-inputs {
-    margin-bottom: 8px;
 }
