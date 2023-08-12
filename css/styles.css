@@ -15,13 +15,6 @@ img {
     display: block;
 }
 
-p {
-    margin: 0;
-}
-
-h1, h2, h3 {
-    margin: 0;
-}
 
 :root {
     --white: #FFFFFF;
@@ -944,8 +937,12 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-for-modal-window:focus .svg-modal-window:focus {
+.input-for-modal-window:focus .svg-modal-window {
     fill: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+.input-for-modal-window:focus {
     border-color: #4D5AE5;
 }
 
@@ -1025,8 +1022,4 @@ body {
 
 .container-for-inputs {
     margin-bottom: 8px;
-}
-
-.container-for-button {
-    margin-left: 85px;
 }
