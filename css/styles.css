@@ -980,7 +980,7 @@ body {
     margin-bottom: 24px;
 }
 
-.label-user-privacy span {
+.label-user-privacy {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1024,7 +1024,7 @@ body {
     margin-bottom: 16px;
 }
 
-.input-user-privacy:checked + .label-user-privacy span .span-words-in-label {
+.input-user-privacy:checked + .label-user-privacy .span-words-in-label {
     background-color: var(--good);
     border: none;
     fill: var(--pretty);
