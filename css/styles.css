@@ -1022,3 +1022,7 @@ body {
     border: none;
     fill: var(--pretty);
 }
+
+.container-for-inputs {
+    margin-bottom: 8px;
+}
