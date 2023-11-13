@@ -892,9 +892,6 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea-in-modal-window:focus {
-    border-color: #4D5AE5;
-}
 
 .container-for-inputs {
     margin-bottom: 8px;
@@ -1016,4 +1013,16 @@ body {
     border: none
 }
 
+.button-close:hover .svg-modal-window,
+.button-close:focus .svg-modal-window {
+    fill: #FFFFFF;
+}
+
+.svg-modal-widnow:focus {
+    fill:#4D5AE5;
+}
+
+.textarea-in-modal-window {
+    border-color: #4D5AE5;
+}
 /* -----/* Модальне вікно-----/* */
