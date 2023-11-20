@@ -958,13 +958,15 @@ body {
     background-color: transparent;
     padding: 8px 16px;
     resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-for-modal-window:focus {
-    border-color: #4D5AE5;;
+    border-color: #4D5AE5;
 }
-.container-f0r-checkbox {
+.container-for-checkbox {
     margin-bottom: 24px;
 }
 
@@ -988,13 +990,14 @@ body {
     fill: transparent;
 }
 
-.link-for-privat-privacy {
+.link-for-privacy-privacy {
     color: var(--blue)
 }
 
 .main-button {
     display: block;
     min-width: 169px;
+    height: 56px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -1005,4 +1008,7 @@ body {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
