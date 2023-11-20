@@ -950,9 +950,8 @@ body {
     border-color: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-
 .input-for-modal-window:focus {
-    fill: #4D5AE5;
+    border-color: #4D5AE5;
 }
 
 .container-for-textarea {
@@ -978,6 +977,7 @@ body {
 .textarea-for-modal-window:focus {
     border-color: #4D5AE5;
 }
+
 .container-for-checkbox {
     margin-bottom: 24px;
 }
