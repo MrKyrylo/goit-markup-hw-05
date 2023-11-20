@@ -671,12 +671,9 @@ body {
     border: none;
 }
 
-.button-close:hover + .svg-modal-window{
-    fill: #ffffff;
-}
-
-.button-close:focus + .svg-modal-window{
-    fill: #ffffff;
+.button-close:hover .svg-modal-window,
+.button-close:focus .svg-modal-window {
+    fill: #FFFFFF;
 }
 
 /* -----/* Модальне вікно-----/* */
