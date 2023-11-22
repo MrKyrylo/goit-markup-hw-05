@@ -829,7 +829,7 @@ body {
 /* Футер мейна та портфоліо */
 
 .div-footer-for-input {
-    padding: 72px 24px 24px 24px;
+    margin-left: 80px;
 }
 
 .subscribe-p {
@@ -882,6 +882,14 @@ body {
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+}
+
+.button-subscribe:hover {
+    background-color: #404BBF;
+}
+
+.button-subscribe:focus {
+    background-color: #404BBF;
 }
 
 /* ______________________________________ */
