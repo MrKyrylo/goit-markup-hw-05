@@ -84,6 +84,17 @@ COMMON STYLES */
     display: none;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
 .logo-header {
     font-family: Raleway;
     font-size: 18px;
@@ -93,17 +104,49 @@ COMMON STYLES */
     color: #2E2F42;
 }
 
-.mobile-btn-burger {
-    border: none;
-    background-color: transparent;
-    padding: 0;
+ 
+
+@media  screen and (max-width: 767px) {
+    .mobile-btn-burger {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+    }
+    
+    .mobile-menu-container {
+        position: relative;
+    }
+    
+    .mobile-menu.is-open {
+        transform: translateX(0%);
+    }
+    
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999999;
+        background-color: #ffffff;
+        transform: translateX(100%);
+        transition: transform 250ms linear;
+    }
+    
+    .moblie-menu-close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+        stroke: #111111;
+    }
 }
 
-.mobile-icon {
-    stroke: #111111;
-}
-
-/* ____________HEADER MOBILE STYLES//______________________ */
+/* ===================HEDER MOBILE=============== */
 
 
 /* ______________________________________________________ */
@@ -113,19 +156,60 @@ COMMON STYLES */
         margin-right: auto;
         margin-left: auto;
     }
+
+
+    .mobile-menu {
+        display: none;
+    }
+
 }
 
-@media screen and (min-width 768px) {
+/* ===================HEDER MOBILE=============== */
+
+@media screen and (min-width: 768px) {
     .container {
         width: 736px;
     }
 
     .menu-header {
+        position: absolute;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }    
+    
+    .nav-item {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    }
+    
+    .mobile-btn-burger {
+        display: none;
+    }
+    
+    .contacts-list {
+        display: block;
+
+    }
+
+    .general-contact {
+        position: relative;
+        color: #434455; 
+        gap: 12px;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.04em;
     }
 }
 
-@media screen and (min-width 1168px) {
+@media screen and (min-width: 1168px) {
     .container {
         width: 1168px;
     }
