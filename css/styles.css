@@ -5,6 +5,11 @@ img {
     display: block;
 }
 
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 p {
     margin: 0;
 }
@@ -24,8 +29,9 @@ h1, h2, h3, h4, h5 {
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #FFFFFF;
     color: #434455;
-    background-color: var(--white);
+    font-size: 16px;
 }
 
 .list {
@@ -74,8 +80,6 @@ body {
 /* _____________________________________________________
 COMMON STYLES */
 
-/* ____________HEADER MOBILE STYLES______________________ */
-
 .menu-header {
     display: none;
 }
@@ -96,24 +100,40 @@ COMMON STYLES */
 }
 
 .logo-header {
-    font-family: Raleway;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.17;
+    line-height: 0.86;
+    letter-spacing: 0.03em;
+    color: #4D5AE5;
+    padding: 17px;
+    font-family: "Raleway", sans-serif;
+    margin-right: 76px;
+}
+
+.logo-header-span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0.86;
     letter-spacing: 0.03em;
     color: #2E2F42;
 }
-
  
 
 @media  screen and (max-width: 767px) {
+    
+    /* =======HEADER MOBILE======== */
+    
     .mobile-btn-burger {
         border: none;
         background-color: transparent;
         padding: 0;
-        line-height: 0;
+        line-height: 0;    
     }
     
+    .mobile-burger-icon {
+        stroke: #2F2F37;
+    }
+
     .mobile-menu-container {
         position: relative;
     }
@@ -144,13 +164,110 @@ COMMON STYLES */
         line-height: 0;
         stroke: #111111;
     }
+
+    /* =======HEADER MOBILE======== */
+    
+    
+    /* =======FIRST SECTION MOBILE======== */
+
+    .first-section {
+        background-color: #2e2f42;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+        max-width: 768px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    .main-headline {
+        font-family: "Roboto", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        text-align: center;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+    }
+
+    .button-order-service {
+        cursor: pointer;
+        background-color: #4D5AE5;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        min-width: 169px;
+        border: none;
+        height: 56px;
+        border-radius: 4px;
+        margin: auto;
+        display: block;
+        transition
+    }
+
+    /* =======SECOND SECTION MOBILE======== */
+
+    .second-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .display {
+       display: flex; 
+    }
+
+    .second-section-list {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        gap: 72px;
+        list-style: none;
+    }
+
+    .div-for-icon {
+        display: none;
+    }
+
+    .quality {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .quality-text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+
+    /* =======SECOND SECTION MOBILE======== */
+
+
 }
 
-/* ===================HEDER MOBILE=============== */
 
-
-/* ______________________________________________________ */
 @media screen and (min-width: 480px) {
+    
+    /* /=======MAIN======== */
+    
     .container {
         width: 367px;
         margin-right: auto;
@@ -162,21 +279,22 @@ COMMON STYLES */
         display: none;
     }
 
+    /* /=======MAIN ======== */
 }
 
-/* ===================HEDER MOBILE=============== */
 
 @media screen and (min-width: 768px) {
+    
+    /* /=======HEADER TABLET ======== */
+
     .container {
         width: 736px;
     }
 
     .menu-header {
-        position: absolute;
         display: flex;
-        align-items: center;
-        justify-content: center;
         gap: 40px;
+        margin-right: 0;    
     }    
     
     .nav-item {
@@ -186,6 +304,8 @@ COMMON STYLES */
         line-height: 24px;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     .mobile-btn-burger {
@@ -198,15 +318,124 @@ COMMON STYLES */
     }
 
     .general-contact {
-        position: relative;
-        color: #434455; 
-        gap: 12px;
-        font-family: Roboto;
         font-size: 12px;
-        font-weight: 400;
-        line-height: 14px;
-        letter-spacing: 0.04em;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+
+    /* /=======HEADER TABLET ======== */
+
+    /* /=======FIRST SECTION TABLET ======== */
+    
+    .first-section {
+        background-color: #2e2f42;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+        max-width: 768px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    .main-headline {
+        font-family: "Roboto", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.07;
+        color: #ffffff;
+        letter-spacing: 0.02em;
+        text-align: center;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+    }
+
+    .button-order-service {
+        cursor: pointer;
+        background-color: #4D5AE5;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        min-width: 169px;
+        border: none;
+        height: 56px;
+        border-radius: 4px;
+        margin: auto;
+        display: block;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* /=======FIRST SECTION TABLET ======== */
+
+    /* =======SECOND SECTION TABLET======== */
+    
+    .display {
+        display: flex;
+    }
+
+    .second-section-list {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .second-section-item {
+        width: calc((100% - 72px) / 2);
+    }
+
+    .quality {
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+    
+
+    .quality-text {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+
+
+    .div-for-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    
+    /* =======SECOND SECTION TABLET======== */
 }
 
 @media screen and (min-width: 1168px) {
