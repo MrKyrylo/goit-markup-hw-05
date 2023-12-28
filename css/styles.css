@@ -335,7 +335,6 @@ COMMON STYLES */
     
     .contacts-list {
         display: block;
-
     }
 
     .general-contact {
@@ -445,16 +444,6 @@ COMMON STYLES */
         letter-spacing: 0.32px;
     }
 
-
-    .div-for-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 112px;
-        background-color: #f4f4fd;
-        border-radius: 4px;
-        margin-bottom: 8px;
-    }
     
     /* =======SECOND SECTION TABLET======== */
 }
@@ -492,7 +481,17 @@ COMMON STYLES */
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
+    .email.item-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .contacts-list {
+        flex-direction: row;
+        gap: 40px;
+    }
 
     /* =======HEADER DESKTOP======== */
 
@@ -502,7 +501,7 @@ COMMON STYLES */
     .first-section {
         background-color: #2e2f42;
         padding: 188px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.png);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
         max-width: 1440px;
         background-repeat: no-repeat;
         background-position: center;
