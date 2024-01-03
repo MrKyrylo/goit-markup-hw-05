@@ -176,25 +176,13 @@ COMMON STYLES */
     padding-bottom: 120px;
 }
 
-.forth-section {
+.third-section {
     background-color: #F4F4FD;
     padding-top: 96px;
     padding-bottom: 96px;
 }
 
-.fifth-section {
-    background-color: #FFFFFF;
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-
-.seventh-section {
-    background-color: #FFFFFF;
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-
-.sixth-section {
+.fourth-section {
     background-color: #FFFFFF;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -435,7 +423,7 @@ COMMON STYLES */
     /* =======THIRD SECTION MOBILE======== */
 
 
-    .forth-section-list {
+    .third-section-list {
         display: flex;
         gap: 72px;
         margin-bottom: 0;
@@ -748,13 +736,13 @@ COMMON STYLES */
 
     /* =======THIRD SECTION TABLET======== */
 
-    .forth-section {
+    .third-section {
         background-color: #F4F4FD;
         padding-top: 96px;
         padding-bottom: 96px;
     }
 
-    .forth-section-list {
+    .third-section-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -804,7 +792,7 @@ COMMON STYLES */
         gap: 16px;
     }
 
-    .social-media-link-forth-section {
+    .social-media-link-thrid-section {
         width: 44px;
         height: 44px;
         background-color: #4d5ae5;
@@ -1112,7 +1100,7 @@ COMMON STYLES */
 
     /* =======THIRD SECTION DESKTOP======== */
 
-    .forth-secrion-list {
+    .third-section-list {
         display: flex;
         align-items: center;
         gap: 24px;
@@ -1159,7 +1147,7 @@ COMMON STYLES */
 
     /* =======FOURTH SECTION DESKTOP======== */
 
-    .sixth-section {
+    .fourth-section {
         background-color: #FFFFFF;
         padding-top: 120px;
         padding-bottom: 120px;
