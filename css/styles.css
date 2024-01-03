@@ -1053,7 +1053,7 @@ COMMON STYLES */
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: normal;
         line-height: 24px;
         letter-spacing: 0.32px;
     }
@@ -1162,6 +1162,8 @@ COMMON STYLES */
         justify-content: center;
         flex-direction: row;
         gap: 72px 24px;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
 
     .our-portfolio-item {
