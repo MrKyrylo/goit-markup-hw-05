@@ -101,11 +101,6 @@ COMMON STYLES */
     justify-content: space-between;
 }
 
-.header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-}
-
 .logo-header {
     font-size: 18px;
     font-weight: 700;
@@ -164,7 +159,7 @@ COMMON STYLES */
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
-    max-width: 768px;
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -606,7 +601,7 @@ COMMON STYLES */
 @media screen and (min-width: 768px) {
     
     /* /=======HEADER TABLET ======== */
-
+    
     .container {
         width: 736px;
     }
@@ -637,11 +632,12 @@ COMMON STYLES */
     }
 
     .general-contact {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-style: normal;
     }
 
     .header-nav {
@@ -1069,6 +1065,8 @@ COMMON STYLES */
         align-items: center;
         gap: 72px 24px;
         justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 
     .second-section-item {
