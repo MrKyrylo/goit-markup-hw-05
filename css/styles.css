@@ -36,9 +36,9 @@ body {
 
 .flex {
     display: flex;
+    align-items: baseline;
     flex-wrap: nowrap;
-    align-content: center;
-    flex-direction: column;
+    gap: 0;
 }
 
 .list {
@@ -241,12 +241,12 @@ COMMON STYLES */
     justify-content: center;
 }
 
-.socail-media-item {
+.social-media-item {
     width: 40px;
     height: 40px;
 }
 
-.socail-media-link {
+.social-media-link {
     width: 100%;
     height: 100%;
     background-color: #4d5ae5;
@@ -1162,8 +1162,6 @@ COMMON STYLES */
         justify-content: center;
         flex-direction: row;
         gap: 72px 24px;
-        margin: 0 auto;
-        flex-wrap: wrap;
     }
 
     .our-portfolio-item {
