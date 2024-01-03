@@ -873,7 +873,7 @@ COMMON STYLES */
         margin-right: 24px;
     }
 
-    .socail-media {
+    .social-media {
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -1145,6 +1145,17 @@ COMMON STYLES */
 
     /* =======FOURTH SECTION DESKTOP======== */
 
+    .social-media {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        color: #FFF;
+        margin-bottom: 16px;
+    }
+
     .fourth-section {
         background-color: #FFFFFF;
         padding-top: 120px;
@@ -1162,6 +1173,8 @@ COMMON STYLES */
         justify-content: center;
         flex-direction: row;
         gap: 72px 24px;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
 
     .our-portfolio-item {
